@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 50px;
+            font-family:'Courier New', Courier, monospace;
+        }
+        button{
+            border: none;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(1, 82, 82);
+            color: rgb(255, 255, 255);
+            width: 150px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        #message{
+            font-weight: bold;
+            font-size: 40px;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 70px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        marquee{
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .body.dark{
+            background-color: black;
+        }
+        .body.dark h1{
+            color: white;
+        }
+
+        .body.dark p{
+            color: white;
+        }
+
+        .body.dark marquee{
+            color: white;
+        }
+        h1,p{
+            color: black;
+        }
+        a{
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        a:hover{
+            text-decoration: underline;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body id="body" class="body">
+    <a href="../../../../portfolio.html">Go Back to Portfolio</a>
+    <marquee direction="right"> Hala kaaaa!</marquee>
+    <h1>JAVASCRIPT DEMO</h1>
+    <div>
+    <button id="load-btn"> LOAD </button>
+    <button id="change-btn">CHANGE</button>
+    <button id="mode">Dark Mode</button>
+    </div>
+    <p id="message">waiting...</p>
+    <p id="loading">Profile...</p>
+    <p id="images">Grade...</p>
+    <p id="assets">Schedule...</p>
+    <script src="script.js"></script>
+</body>
+</html>
