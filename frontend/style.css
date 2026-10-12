@@ -515,6 +515,14 @@ img {
   color: #f0f0f0;
 }
 
+.dark .marquee-div {
+  background: white;
+}
+
+.dark .marquee-div marquee {
+  color: #111111 !important;
+}
+
 .dark .header {
   background: #0a0a0a;
   border-bottom: 1px solid #222222;
