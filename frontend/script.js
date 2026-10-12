@@ -2,18 +2,18 @@
     // Theme toggle
     const html = document.documentElement;
     const themeBtn = document.getElementById('themeBtn');
-
-    // Restore saved theme on page load
-    if (localStorage.getItem('ft-theme') === 'dark') {
-      html.classList.add('dark');
-      themeBtn.textContent = 'Light';
-    }
+    const heroPortrait = document.querySelector('.hero-portrait');
 
     themeBtn.addEventListener('click', function() {
-      html.classList.toggle('dark');
-      let isDark = html.classList.contains('dark');
-      localStorage.setItem('ft-theme', isDark ? 'dark' : 'light');
-      themeBtn.textContent = isDark ? 'Light' : 'Dark';
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        themeBtn.textContent = 'Dark';
+        heroPortrait.src = 'asset/takamura.webp';
+      } else {
+        html.classList.add('dark');
+        themeBtn.textContent = 'Light';
+        heroPortrait.src = 'asset/serious%20takamura.webp';
+      }
     });
 
     // Hamburger menu
